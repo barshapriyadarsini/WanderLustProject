@@ -149,27 +149,6 @@ module.exports.updateListing=async(req,res)=>{
     }
 
 
-// module.exports.updateListing = async(req,res)=>{
-//     const { id } = req.params;
-//     let listing = await Listing.findById(id);
-//     let response = await geocodingClient.forwardGeocode({
-//         query: req.body.listing.location,
-//         limit: 1,
-//     }).send();
-//     listing.geometry = response.body.features[0].geometry;
-//     Object.assign(listing, req.body.listing);
-//     if(typeof req.file !== "undefined"){
-//         let url = req.file.path;
-//         let filename = req.file.filename;
-//         listing.image = { url, filename };
-//     }
-//     await listing.save();
-//     req.flash("success","Listing Updated!");
-//     res.redirect(`/listings/${id}`);
-// }
-
-
-
 module.exports.destroyListing=async(req,res)=>{
     const {id}=req.params;
     await Listing.findByIdAndDelete(id);
