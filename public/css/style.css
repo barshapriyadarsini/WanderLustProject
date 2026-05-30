@@ -132,3 +132,68 @@ body{
     height: 400px;
     width: 80vh;
 }
+
+@media (max-width: 768px) {
+    #filters {
+        justify-content: center;
+    }
+
+    .filter {
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    .tax-toggle {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 576px) {
+    #filters {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+    }
+
+    .filter {
+        min-width: 80px;
+        margin-right: 0.8rem;
+        flex-shrink: 0;
+    }
+
+    .filter p {
+        font-size: 0.7rem;
+    }
+
+    .tax-toggle {
+        min-width: 250px;
+        flex-shrink: 0;
+        margin-left: 0.5rem;
+    }
+
+    .listing-card img {
+        height: 15rem !important;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .listing-card img {
+        height: 12rem !important;
+    }
+
+    .card-body {
+        padding: 0.7rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+}
