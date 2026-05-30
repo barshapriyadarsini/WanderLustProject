@@ -34,6 +34,10 @@
             display: flex;
             align-items: center;
         }
+        .listing-img{
+            height: 20rem;
+            object-fit: cover;
+        }
     </style>
 
    <div id="filters">
@@ -117,7 +121,7 @@
         <% for(let listing of allListings){ %>
             <a href="/listings/<%= listing._id %>" class="listing-link">
             <div class="card col listing-card" >
-                <img src="<%= listing.image.url %>" class="card-img-top" alt="listing-image" style="height: 20rem;">
+                <img src="<%= listing.image.url %>" class="card-img-top listing-img" alt="listing-image" >
 
 
                 <div class="card-img-overlay">
