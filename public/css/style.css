@@ -197,3 +197,61 @@ body{
         font-size: 0.85rem;
     }
 }
+
+
+/* Map */
+#map{
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px){
+
+    .show-card{
+        width: 95% !important;
+        margin: auto !important;
+    }
+
+    .show-img{
+        height: 250px !important;
+        object-fit: cover;
+    }
+
+    .btns{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+
+    #map{
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px){
+
+    .show-img{
+        height: 200px !important;
+    }
+
+    .card.col-5{
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    #map{
+        height: 250px;
+    }
+
+    h3,h4{
+        font-size: 1.3rem;
+    }
+
+    textarea{
+        font-size: 14px;
+    }
+}
